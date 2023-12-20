@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0, user-scalable=no">
-  <title>在线走迷宫游戏</title>
+  <title>Permainan labirin online</title>
   <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="./css/materialize.min.css">
@@ -16,12 +16,12 @@
   <div class="container center-align">
     <div class="row"></div>
     <!-- Github buttons -->
-    <div class="row right-align">
-      <a href="https://github.com/knightyun/maze-game">
-        <img alt="" src="https://img.shields.io/github/stars/knightyun/maze-game?style=social">
-        <img alt="" src="https://img.shields.io/github/forks/knightyun/maze-game?style=social">
-      </a>
-    </div>
+<!--    <div class="row right-align">-->
+<!--      <a href="https://github.com/knightyun/maze-game">-->
+<!--        <img alt="" src="https://img.shields.io/github/stars/knightyun/maze-game?style=social">-->
+<!--        <img alt="" src="https://img.shields.io/github/forks/knightyun/maze-game?style=social">-->
+<!--      </a>-->
+<!--    </div>-->
     <!-- 迷宫模块 -->
     <div class="row">
       <div class="maze">
@@ -38,7 +38,7 @@
         <!-- 地图尺寸 -->
         <div class="row valign-wrapper" style="margin-bottom: 0;">
           <div class="col s5">
-            <p class="teal-text text-lighten-5">地图大小：</p>
+            <p class="teal-text text-lighten-5">Ukuran peta:</p>
           </div>
           <div class="range-field col s7">
             <input type="range" class="maze-size teal lighten-2"
@@ -48,13 +48,13 @@
         <!-- 游戏难度 -->
         <div class="row input-field teal lighten-1" style="margin-top: 0;">
           <div class="col s5">
-            <p class="teal-text text-lighten-5">游戏难度：</p>
+            <p class="teal-text text-lighten-5">Kesulitan permainan：</p>
           </div>
           <div class="col s7">
             <select class="game-level">
-              <option value="0" selected>简单</option>
-              <option value="2">困难</option>
-              <option value="1">复杂</option>
+              <option value="0" selected>Sederhana</option>
+              <option value="2">kesulitan</option>
+              <option value="1">kompleks</option>
             </select>
           </div>
         </div>
@@ -64,13 +64,13 @@
           <div class="col s6">
             <button class="start-game btn waves-effect waves-light
             teal-text text-lighten-5" onclick="startGame()">
-              开始游戏
+              Memulai permainan
             </button>
           </div>
           <div class="col s6">
             <button class="btn waves-effect offset-m3 waves-light
             teal-text text-lighten-5" onclick="reGenMaze()">
-              重新生成
+              diregenerasi
             </button>
           </div>
         </div>
@@ -80,38 +80,38 @@
     <div class="fixed-action-btn">
       <a class="game-hint btn-floating btn-large scale-transition
       waves-effect waves-light z-depth-3 teal lighten-1 scale-out"
-      onclick="drawHintPath()">提示</a>
+      onclick="drawHintPath()">tip</a>
     </div>
     <!-- 彩蛋 -->
     <div class="row">
       <a class="waves-effect waves-light btn modal-trigger"
-      href="#modal-surprise">Modal</a>
+      href="#modal-surprise">pengandaian</a>
       <div id="modal-surprise" class="modal">
         <div class="modal-content">
           <div class="fireworks"></div>
           <div class="surprise-msg">
-            <h4 class="orange-text">恭喜通关</h4>
+            <h4 class="orange-text">Selamat telah melewati level tersebut</h4>
             <p class="orange-text text-darken-4 center-align">
-              祝贺你喜提彩蛋一枚
+              Selamat atas selamat ulang tahunmu
             </p>
             <p>✨🎉🎉🎉✨</p>
             <p class="orange-text text-darken-4 center-align">
-              相信每一个能通关此地图的玩家
+              Saya yakin setiap pemain yang berhasil menyelesaikan peta ini
             </p>
             <p class="orange-text text-darken-4 center-align">
-              内心都住着一个有趣的灵魂
+              Ada jiwa menarik yang hidup di dalamnya
             </p>
             <p class="orange-text text-darken-4 center-align">
-              有着百折不挠的毅力，持之以恒的耐心
+              Memiliki ketekunan dan ketekunan
             </p>
             <p class="orange-text text-darken-4 center-align">
-              希望未来的你，也能长此以往
+              Saya harap Anda dapat terus seperti ini di masa depan
             </p>
             <p class="orange-text text-darken-4 center-align">
-              愿坚强和自信与你同在^_^
+              Semoga kekuatan dan kepercayaan diri menyertai Anda ^_^
             </p>
             <a href="#!" class="modal-close waves-effect
-						waves-green btn-flat right red-text text-darken-3">关闭</a>
+						waves-green btn-flat right red-text text-darken-3">menutup</a>
           </div>
         </div>
       </div>

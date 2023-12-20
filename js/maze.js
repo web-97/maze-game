@@ -1,8 +1,4 @@
-/**
- * @file 走迷宫游戏的实现. (https://github.com/knightyun/maze-game)
- * @copyright 2020 knightyun. <https://raw.githubusercontent.com/knightyun/maze-game/master/maze.js>
- * @license MIT License. <https://raw.githubusercontent.com/knightyun/maze-game/master/LICENSE>
- */
+
 
 /**
  * 迷宫类实现
@@ -996,7 +992,7 @@ class Maze {
             // 正常提示
             M.toast({
                 html: `<span class="orange-text text-accent-4">
-                        ✨✨恭喜抵达出口🎉🎉请重新开始游戏
+                        ✨✨Selamat telah mencapai pintu keluar🎉🎉Silahkan restart gamenya
                        </span>`,
                 displayLength: 3000,
             });
@@ -1163,9 +1159,9 @@ function startGame() {
     if (typeof DeviceMotionEvent === "undefined") {
         M.toast({
             html: `<span class="red-text">
-                     该浏览器不支持重力感应器！<br>
+                     Browser ini tidak mendukung sensor gravitasi!<br>
                      <span class="red-text text-lighten-3">
-                       请使用方向键移动小球
+                       Silakan gunakan tombol arah untuk menggerakkan bola
                      </span>
                    </span>
                    `,
@@ -1175,19 +1171,19 @@ function startGame() {
         if (detectError) {
             M.toast({
                 html: `<span class="teal-text text-accent-2">
-                         游戏开始！<br>
-                         当前设备可能<span class="red-text text-lighten-3"
-                         >不支持</span>重力感应器或<span class="red-text text-lighten-3"
-                         >检测失败</span>，<br>
-                         请尝试晃动手机，或者使用方向键移动小球<br>
+                         Permainan dimulai!<br>
+                         Perangkat saat ini mungkin<span class="red-text text-lighten-3"
+                         >tidak mendukung</span>sensor gravitasi atau<span class="red-text text-lighten-3"
+                         >Deteksi gagal</span>，<br>
+                         Silakan coba goyangkan ponsel atau gunakan tombol arah untuk menggerakkan bola<br>
                        </span>`,
                 displayLength: 5000,
             });
         } else {
             M.toast({
                 html: `<span class="teal-text text-accent-2">
-                         游戏开始！<br>
-                         请晃动手机，或使用方向键移动小球
+                         Permainan dimulai!<br>
+                         Goyangkan ponsel Anda atau gunakan tombol arah untuk menggerakkan bola
                        </span>`,
                 displayLength: 2000,
             });
